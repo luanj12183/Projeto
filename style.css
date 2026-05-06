@@ -38,6 +38,7 @@ Logo nas linhas de baixo... */
 body {
 /*Backgorund: color image repeat */ 
 background: var(--bg-url) no-repeat top center/cover; 
+height: 100vh;
 }
 
 
@@ -189,6 +190,18 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* Media Queries */
+@media (min-width: 700px) {
+:root {
+    --big-url: url(./Assets/bg-desktop.jpg)
+}
+.light {
+    --big-url: url(./Assets/bg-desktop-light.jpg)
+    }
+}
+
+
 
 /* Elementos inline, não é possível usar o margin: auto
 /* Se o display for (block) ele não aceita o text-align do "pai"
